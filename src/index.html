@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+    <section class="section flex-row">
+      <div class="flex-column width-50">
+        <div class="flex-row width-100">
+          <h2>Recent scores</h2>
+          <button type="button">Refresh</button>
+        </div>
+        <ul id="scores">
+          <li>Name: 100</li>
+          <li>Name: 20</li>
+          <li>Name: 50</li>
+          <li>Name: 78</li>
+          <li>Name: 125</li>
+          <li>Name: 77</li>
+          <li>Name: 42</li>
+        </ul>
+      </div>
+      <form class="flex-column width-50">
+        <h2>Add your score</h2>
+        <input id="user-name" type="text" placeholder="Your name" required />
+        <input
+          id="user-score"
+          type="number"
+          placeholder="Your score"
+          required
+        />
+        <!-- <div class="justify-end"> -->
+        <button type="submit" class="justify-end">Submit</button>
+        <!-- </div> -->
+      </form>
+    </section>
+    <footer></footer>
+  </body>
+</html>
