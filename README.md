@@ -3,7 +3,7 @@
 > Hello! I am a software developer! I can help you build a product, feature or website. Tak a look of my works.
 > If you like what you see and have a project you need coded, don’t hesitate and contact me.
 
-# ToDo List.
+# Leaderboard
 
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple steps:
 2. Type these commands into the terminal:
 
 - git clone https://github.com/rbanos-mv/leaderboard.git
-- cd todo
+- cd leaderboard
 - npm install
 
 3. To build the project with webpack
