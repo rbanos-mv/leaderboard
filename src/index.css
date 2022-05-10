@@ -39,6 +39,10 @@ li {
   list-style-type: none;
 }
 
+li:nth-child(even) {
+  background-color: lightgrey;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
