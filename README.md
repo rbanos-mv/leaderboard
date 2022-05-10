@@ -1,56 +1,55 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+> Hello! I am a software developer! I can help you build a product, feature or website. Tak a look of my works.
+> If you like what you see and have a project you need coded, don’t hesitate and contact me.
 
-> Description the project.
+# ToDo List.
 
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
+
+<p style="align: center">
+  <img src="./app_screenshot.png" alt="Basic UI"  width="500px"/>
+</p>
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- CSS
+- HTML
+- JavaScript ES6
+- Webpack
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rbanos-mv.github.io/leaderboard/)
 
+### Getting Started
 
-## Getting Started
+To get a local copy up and running follow these simple steps:
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+1. Open your terminal and navigate to the folder you would like to put these files.
+2. Type these commands into the terminal:
 
+- git clone https://github.com/rbanos-mv/leaderboard.git
+- cd todo
+- npm install
 
-To get a local copy up and running follow these simple example steps.
+3. To build the project with webpack
 
-### Prerequisites
+- npm run build
+- Open dist/index.html in you web browser.
 
-### Setup
+4. To run the webpack dev server
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- npm run start
+- Your web browser will open on localhost:8080
 
 ## Authors
 
-👤 **Author1**
+👤 **Roberto A. Baños Alvarez**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@rbanos-mv](https://github.com/rbanos-mv)
+- Twitter: [@RobertoBanosMV](https://twitter.com/RobertoBanosMV)
+- LinkedIn: [Roberto A Baños Alvarez](https://linkedin.com/in/roberto-a-baños-alvarez-500766234)
 
 ## 🤝 Contributing
 
