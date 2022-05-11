@@ -7,9 +7,18 @@ class Api {
     this.scoresUrl = scoresUrl;
   }
 
-  sendNewGame = async (body) => {
-    //
-  };
+  sendNewGame = async (body) => fetch(this.baseUrl, {
+    method: 'POST',
+    body: JSON.stringify(body),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => json.result)
+    .catch((error) => {
+      throw error;
+    });
 
   sendScore = async (gameId, body) => {
     //
