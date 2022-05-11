@@ -20,7 +20,9 @@ class ScoreList {
   };
 
   addScore = async (user, score) => {
-    //
+    const newScore = { user, score };
+    const result = await api.sendScore(this.gameId, newScore);
+    return result === 'Leaderboard score created correctly.';
   };
 
   getScores = async () => {
