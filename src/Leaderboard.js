@@ -14,7 +14,7 @@ class Leaderboard {
   };
 
   setupRefreshButton = async () => {
-    //
+    document.querySelector('#refresh').addEventListener('click', this.showScores);
   };
 
   setupSubmitButton = async () => {
