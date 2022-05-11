@@ -33,9 +33,12 @@ class Api {
       throw error;
     });
 
-  getScores = async (gameId) => {
-    //
-  };
+  getScores = async (gameId) => fetch(`${this.baseUrl + gameId}/scores/`)
+    .then((response) => response.json())
+    .then((json) => json.result)
+    .catch((error) => {
+      throw error;
+    });
 }
 
 const api = new Api();
