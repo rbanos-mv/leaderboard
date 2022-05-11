@@ -26,7 +26,11 @@ class ScoreList {
   };
 
   getScores = async () => {
-    //
+    if (this.gameId !== null) {
+      return api.getScores(this.gameId);
+    }
+
+    return Promise.resolve([]);
   };
 }
 
