@@ -5,6 +5,10 @@ class Leaderboard {
     this.setupSubmitButton();
   };
 
+  addScore = async () => {
+    //
+  };
+
   showScore = async (score) => {
     //
   };
@@ -18,7 +22,7 @@ class Leaderboard {
   };
 
   setupSubmitButton = async () => {
-    //
+    document.querySelector('#submit').addEventListener('click', this.addScore);
   };
 }
 
