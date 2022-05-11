@@ -9,10 +9,14 @@ class Leaderboard {
 
   addScore = async () => {
     const self = this;
-    const user = document.querySelector('#user-name').value;
-    const score = document.querySelector('#user-score').value;
+    const userElement = document.querySelector('#user-name');
+    const scoreElement = document.querySelector('#user-score');
+    const user = userElement.value;
+    const score = scoreElement.value;
 
     if (user !== null && score !== null && user.trim() !== '' && score.trim() !== '') {
+      userElement.value = '';
+      scoreElement.value = '';
       await scoreList.addScore(user, parseInt(score, 10));
       self.showScores();
     }
