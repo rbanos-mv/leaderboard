@@ -14,7 +14,9 @@ class ScoreList {
   }
 
   createGame = async () => {
-    //
+    const response = await api.sendNewGame({ name: this.gameName });
+    this.gameId = response.slice(14, 35).trim();
+    localStorage.setItem(gameKey, this.gameId);
   };
 
   addScore = async (user, score) => {
