@@ -1,3 +1,5 @@
+import scoreList from './ScoreList.js';
+
 class Leaderboard {
   setup = async () => {
     this.showScores();
@@ -10,11 +12,13 @@ class Leaderboard {
   };
 
   showScore = async (score) => {
-    //
+    console.log('showScore', score);
   };
 
   showScores = async () => {
-    //
+    const list = await scoreList.getScores();
+    list.sort((a, b) => b.score - a.score);
+    list.forEach((score) => this.showScore(score));
   };
 
   setupRefreshButton = async () => {
