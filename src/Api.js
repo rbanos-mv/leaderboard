@@ -4,6 +4,7 @@ const scoresUrl = '/scores/';
 class Api {
   constructor() {
     this.baseUrl = baseUrl;
+    this.scoresUrl = scoresUrl;
   }
 
   sendNewGame = async (body) => {
