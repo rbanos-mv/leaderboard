@@ -36,4 +36,4 @@ class ScoreList {
 
 const scoreList = new ScoreList();
 
-exports.scoreList = scoreList;
+export default scoreList;

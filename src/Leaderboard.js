@@ -28,4 +28,4 @@ class Leaderboard {
 
 const leaderboard = new Leaderboard();
 
-exports.leaderboard = leaderboard;
+export default leaderboard;
