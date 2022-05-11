@@ -18,14 +18,16 @@ class Leaderboard {
     }
   };
 
-  showScore = async (score) => {
-    console.log('showScore', score);
+  showScore = async (ulElement, score) => {
+    ulElement.innerHTML += `<li>${score.user}: ${score.score}</li>`;
   };
 
   showScores = async () => {
+    const ulElement = document.querySelector('#scores');
+    ulElement.innerHTML = '';
     const list = await scoreList.getScores();
-    list.sort((a, b) => b.score - a.score);
-    list.forEach((score) => this.showScore(score));
+    list.sort((a, b) => b.score - a.score + a.user.localeCompare(b.user));
+    list.forEach((score) => this.showScore(ulElement, score));
   };
 
   setupRefreshButton = async () => {
