@@ -8,7 +8,14 @@ class Leaderboard {
   };
 
   addScore = async () => {
-    //
+    const self = this;
+    const user = document.querySelector('#user-name').value;
+    const score = document.querySelector('#user-score').value;
+
+    if (user !== null && score !== null && user.trim() !== '' && score.trim() !== '') {
+      await scoreList.addScore(user, parseInt(score, 10));
+      self.showScores();
+    }
   };
 
   showScore = async (score) => {
