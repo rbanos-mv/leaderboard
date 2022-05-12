@@ -29,11 +29,19 @@
       <form id="form" class="flex-column width-50">
         <h2>Add your score</h2>
         <div class="form-content">
-          <input id="user-name" type="text" placeholder="Your name" required />
+          <input
+            id="user-name"
+            type="text"
+            placeholder="Your name"
+            maxlength="13"
+            required
+          />
           <input
             id="user-score"
-            type="number"
+            type="text"
+            pattern="^[0-9]+$"
             placeholder="Your score"
+            maxlength="6"
             required
           />
         </div>
