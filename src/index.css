@@ -122,17 +122,30 @@ section {
 }
 
 ul {
-  border: black 2px solid;
+  background-color: var(--font-color);
+  border: white 2px solid;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
   min-height: 25px;
+  padding: 8px;
   width: 100%;
 }
 
 li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: medium;
   list-style-type: none;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 li:nth-child(even) {
   background-color: lightgrey;
+  color: var(--font-color);
 }
 
 .flex-column {
