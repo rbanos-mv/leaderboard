@@ -22,8 +22,11 @@ class Leaderboard {
     }
   };
 
+  #numberWithCommas = (x) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
   showScore = async (ulElement, score) => {
-    ulElement.innerHTML += `<li>${score.user}: ${score.score}</li>`;
+    const formated = this.#numberWithCommas(score.score);
+    ulElement.innerHTML += `<li><span>${score.user}</span><span>${formated}</span></li>`;
   };
 
   showScores = async () => {
