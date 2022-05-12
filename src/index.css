@@ -119,6 +119,7 @@ input {
   border-radius: 4px;
   color: var(--font-color);
   font-size: medium;
+  margin: 10px 0;
 }
 
 section {
