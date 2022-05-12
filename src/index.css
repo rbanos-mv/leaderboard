@@ -4,6 +4,7 @@
   font-family: 'Exo 2', sans-serif;
   font-size: 10px;
 
+  --font-color: #5400c7;
   --neon-text-color: #f40;
   --neon-border-color: #08f;
   --shadow-color: #a01276;
@@ -25,8 +26,12 @@ body {
 }
 
 button {
+  border: var(--font-color) 1px solid;
+  box-shadow: 3px 3px var(--font-color);
+  color: var(--font-color);
+  font-weight: bold;
   height: min-content;
-  padding: 5px;
+  padding: 2px;
 }
 
 h1,
