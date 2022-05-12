@@ -114,6 +114,10 @@ h2 {
 }
 
 input {
+  background-color: lightgrey;
+  border: lightgrey 2px solid;
+  border-radius: 4px;
+  color: var(--font-color);
   font-size: medium;
 }
 
