@@ -3,6 +3,9 @@
 :root {
   font-family: 'Exo 2', sans-serif;
   font-size: 10px;
+
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
 }
 
 * {
@@ -30,6 +33,65 @@ h2,
 input {
   margin-bottom: 20px;
   width: 100%;
+}
+
+h1 {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  border: 0.4rem solid white;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 1.5s infinite alternate;
+}
+
+h1::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1:focus {
+  outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow:
+      -0.2rem -0.2rem 1rem white,
+      0.2rem 0.2rem 1rem white,
+      0 0 2rem var(--neon-text-color),
+      0 0 4rem var(--neon-text-color),
+      0 0 6rem var(--neon-text-color),
+      0 0 8rem var(--neon-text-color),
+      0 0 10rem var(--neon-text-color);
+    box-shadow:
+      0 0 0.5rem white,
+      inset 0 0 0.5rem white,
+      0 0 2rem var(--neon-border-color),
+      inset 0 0 2rem var(--neon-border-color),
+      0 0 4rem var(--neon-border-color),
+      inset 0 0 4rem var(--neon-border-color);
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
 }
 
 input {
