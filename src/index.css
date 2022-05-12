@@ -6,6 +6,7 @@
 
   --neon-text-color: #f40;
   --neon-border-color: #08f;
+  --shadow-color: #a01276;
 }
 
 * {
@@ -92,6 +93,19 @@ h1:focus {
     text-shadow: none;
     box-shadow: none;
   }
+}
+
+h2 {
+  color: white;
+  text-shadow:
+    0 0 7px var(--shadow-color),
+    0 0 10px var(--shadow-color),
+    0 0 21px var(--shadow-color),
+    0 0 42px white,
+    0 0 82px white,
+    0 0 92px white,
+    0 0 102px white,
+    0 0 151px white;
 }
 
 input {
