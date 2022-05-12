@@ -162,6 +162,14 @@ li:nth-child(even) {
   justify-content: space-between;
 }
 
+.form-content {
+  background-color: var(--font-color);
+  border: white 2px solid;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
 .width-50 {
   width: 50%;
 }
