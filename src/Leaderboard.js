@@ -1,10 +1,15 @@
 import scoreList from './ScoreList.js';
 
 class Leaderboard {
+  #formFocus = () => {
+    document.querySelector('#user-name').focus();
+  };
+
   setup = async () => {
     this.showScores();
     this.setupRefreshButton();
     this.setupSubmitButton();
+    this.#formFocus();
   };
 
   addScore = async (event) => {
@@ -15,6 +20,7 @@ class Leaderboard {
     const user = (userElement.value || '').trim();
     const score = parseInt((scoreElement.value || '').trim(), 10);
 
+    self.#formFocus();
     if (user !== '' && !Number.isNaN(score)) {
       event.preventDefault();
       form.reset();
