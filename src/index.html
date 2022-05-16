@@ -26,16 +26,26 @@
           <li>Name: 42</li>
         </ul>
       </div>
-      <form class="flex-column width-50">
+      <form id="form" class="flex-column width-50">
         <h2>Add your score</h2>
-        <input id="user-name" type="text" placeholder="Your name" required />
-        <input
-          id="user-score"
-          type="number"
-          placeholder="Your score"
-          required
-        />
-        <button id="submit" type="button" class="justify-end">Submit</button>
+        <div class="form-content">
+          <input
+            id="user-name"
+            type="text"
+            placeholder="Your name"
+            maxlength="13"
+            required
+          />
+          <input
+            id="user-score"
+            type="text"
+            pattern="^[0-9]+$"
+            placeholder="Your score"
+            maxlength="6"
+            required
+          />
+        </div>
+        <button id="submit" type="submit" class="justify-end">Submit</button>
       </form>
     </section>
     <footer></footer>

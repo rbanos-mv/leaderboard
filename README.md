@@ -63,9 +63,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- [Background image](https://pressstart.vip/images/uploads/assets/snowymountains.png) downloaded from [pressstart.vip](https://pressstart.vip)
+- [Flickering neon sign effect](https://codepen.io/GeorgePark/pen/MrjbEr) was adapted from the code by [George W. Park](https://codepen.io/GeorgePark)
 
 ## 📝 License
 
